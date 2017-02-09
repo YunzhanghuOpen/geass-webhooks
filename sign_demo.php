@@ -6,7 +6,6 @@ php sign_demo.php
 */
 
 # 商户配置
-$partner = 'push_test_dealer_id';
 $key = 'ajksaljasakae499u9ee9r9ew9r9a9e9';
 
 # 通知的数据
