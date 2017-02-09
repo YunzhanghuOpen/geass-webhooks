@@ -82,6 +82,7 @@ data: {
 
     ```php
     # appkey 为云支付提供的通讯密钥
+    $message = $message + "&key=" + $appkey
     $hash = hmac('sha256', $message, $appkey);
     ```
     

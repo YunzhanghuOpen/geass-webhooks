@@ -25,7 +25,7 @@ foreach($params as $k => $val) {
 		$signStr .= $k . '=' . $val . '&';
 	}
 }
-$signStr = substr($signStr, 0, -1);
+$signStr = $signStr . "key=" . $key;
 echo sprintf("签名原始串: %s \n", $signStr);
 
 # 签名结果
