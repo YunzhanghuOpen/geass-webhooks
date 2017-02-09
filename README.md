@@ -13,7 +13,7 @@ v1.0 2017年02月08日
 
 示例：
 
-curl -X __POST__ -H "Content-Type: __application/json__" -d '{"notify_id":"107719160414339072","partner":"testdealerid","trade_status":"REEXCHANGE_SUCCESS","sign":"588fe8918cdd87d3256ab98ae98d3cea243bdc5dc8235f2859f5fa18a72c3ce7","data":"{\"order_id\":\"201611110068650213602-realtime-test\",\"dealer_id\":\"testdealerid\",\"ref\":\"75411107795173382\",\"amount\":\"100.02\",\"sys_amount\":\"100.00\",\"broker_amount\":\"0.02\",\"broker_fee\":\"0.00\",\"sys_fee\":\"0.00\",\"name\":\"\u5f20\u4e09\",\"anchor_id\":\"56244623\"}","create_time":"2017-02-08 15:38:35","notify_time":"2017-02-08 15:38:35"}' "https://foo.bar/getnotice/stuff"
+curl -X __POST__ -H "Content-Type: __application/json__" -d '{"notify_id":"107719160414339072","partner":"testdealerid","trade_status":"REEXCHANGE_SUCCESS","sign":"c7bbc4b61be7afad07763ba9a0442dbfa5549fa1ca1ab7059ba7e80f234e87db","data":"{\"order_id\":\"201611110068650213602-realtime-test\",\"dealer_id\":\"testdealerid\",\"ref\":\"75411107795173382\",\"amount\":\"100.02\",\"sys_amount\":\"100.00\",\"broker_amount\":\"0.02\",\"broker_fee\":\"0.00\",\"sys_fee\":\"0.00\",\"name\":\"张三\",\"anchor_id\":\"56244623\"}","create_time":"2017-02-08 15:38:35","notify_time":"2017-02-08 15:38:35"}' "https://foo.bar/getnotice/stuff"
 
 > 注意：data 的内容经过 json encode，请解析后使用。
 
@@ -33,7 +33,7 @@ curl -X __POST__ -H "Content-Type: __application/json__" -d '{"notify_id":"10771
     notify_id: '107719160414339072',
     partner: 'testdealerid',
     trade_status: 'REEXCHANGE_SUCCESS',
-    sign: '588fe8918cdd87d3256ab98ae98d3cea243bdc5dc8235f2859f5fa18a72c3ce7',
+    sign: 'c7bbc4b61be7afad07763ba9a0442dbfa5549fa1ca1ab7059ba7e80f234e87db',
     data: '{"order_id":"201611110068650213602-realtime-test","dealer_id":"testdealerid","ref":"75411107795173382","amount":"100.02","sys_amount":"100.00","broker_amount":"0.02","broker_fee":"0.00","sys_fee":"0.00","name":"张三","anchor_id":"56244623"}',
     create_time: '2017-02-08 15:38:35',
     notify_time: '2017-02-08 15:38:35'
